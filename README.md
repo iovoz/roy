@@ -38,11 +38,13 @@ git push    ///推送到git仓
 git commit -m '修改的描述' README.md     //提交单个文件
 
 
-
+---------------------------
 git add --all     ///添加多个
-git commit -m 'hhhh'
-git push
 
+git commit -m 'hhhh'
+
+git push
+---------------------------
 
 
 git status
