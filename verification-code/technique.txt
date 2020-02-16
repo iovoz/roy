@@ -1,0 +1,13 @@
+https://developer.apple.com/documentation/security/password_autofill/enabling_password_autofill_on_an_html_input_element
+
+research result:
+
+1, iOS
+UI, iOS version: 12, 13 
+<input autoComplete="one-time-code"/> 
+or
+<input name="verificationCode"/>
+
+Message, should contains: one time code, or one time, or code
+
+2, Android
