@@ -48,6 +48,6 @@ git push
 git status, git diff README.md
 ------------------------------
 
-//搭建github pages
+//搭建github pages: 
 git checkout -b gh-pages, 
 git push origin gh-pages
