@@ -42,13 +42,12 @@ git add --all     ///添加多个
 git commit -m 'hhhh'
 git push 
 </code>
+
 ------------------------------
 
-git status
-
-git diff README.md
+git status, git diff README.md
 ------------------------------
 
 //搭建github pages
-git checkout -b gh-pages
+git checkout -b gh-pages, 
 git push origin gh-pages
