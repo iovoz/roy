@@ -59,4 +59,15 @@ git merge origin master,
 git status, 
 git diff, 
 git push
+
 ------------------------------
+//删除分支
+git branch -d gh-pages,
+git push origin --delete gh-pages
+
+------------------------------
+
+
+
+ls -ltr .ssh本地
+ls -ltr .ssh
