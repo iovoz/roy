@@ -49,12 +49,19 @@ git status, git diff README.md
 ------------------------------
 
 //搭建github pages: 
-git checkout -b gh-pages, 
-git push origin gh-pages
+package.json:
+"name": "gxxxxx",
+"homepage": "https://iovoz.github.io/gxxxxx/",
+"scripts": 下面加
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
+//然后: yarn add gh-pages --dev 添加到开发环境
+//然后: yarn deploy
+//然后: git add package.json , git add yarn.lock , git commit -m 'homepage and deploy', git push
 
 ------------------------------
-//合并master进入gh-page：
-git checkout gh-pages, 
+//合并master到aaaaa：
+git checkout aaaaa, 
 git merge origin master, 
 git status, 
 git diff, 
