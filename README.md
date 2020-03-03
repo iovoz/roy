@@ -1,7 +1,7 @@
 # roy
-git config --global user.name "symbiane"
+git config --global user.name "hahaha"
 
-git config --global user.email "symbiane@sina.com"
+git config --global user.email "ha@haha.com"
 
 git config -l
 
@@ -51,3 +51,12 @@ git status, git diff README.md
 //搭建github pages: 
 git checkout -b gh-pages, 
 git push origin gh-pages
+
+------------------------------
+//合并master进入gh-page：
+git checkout gh-pages, 
+git merge origin master, 
+git status, 
+git diff, 
+git push
+------------------------------
