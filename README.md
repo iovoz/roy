@@ -1,4 +1,5 @@
 # roy
+
 git config --global user.name "hahaha"
 
 git config --global user.email "ha@haha.com"
@@ -19,7 +20,6 @@ cd development/
 
 git --version
 
-git clone git@github.com:symbiane/roy.git
 ------------------------------
 
 ls -ltr ~/.ssh/known_hosts
@@ -74,6 +74,7 @@ git push origin --delete gh-pages
 
 ------------------------------
 
+https://1cm.hk.chinamobile.com/user/addresslookup.html?term=le+pre
 
 
 ls -ltr .ssh本地
