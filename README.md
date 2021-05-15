@@ -15,8 +15,9 @@ LibreSSL SSL_read: SSL_ERROR_SYSCALL, errno 60
 
 LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 
 //git config --global http.sslBackend "openssl"
-----------------
+if not work above, try below
 //git config --global --add remote.origin.proxy ""
+
 //git config --global --unset http.proxy
 //git config --global --unset https.proxy
 
@@ -38,7 +39,6 @@ git checkout v0.38.0
 
 
 Now add these lines to your ~/.bashrc, ~/.profile, or ~/.zshrc 
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -50,6 +50,7 @@ nvm run node 14.16.1
 
 
 ## command not found: compdef
+
 inside .zshrc, commented out this line: 
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
