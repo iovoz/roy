@@ -1,29 +1,27 @@
 # roy
 
 
-Git error: RPC failed; curl 56 LibreSSL SSL_read: SSL_ERROR_SYSCALL, errno 54
-//git config --global user.name 'YOUR_GITHUB_LOGIN_USERNAME'
-//git config --global user.password 'YOUR_GITHUB__TOKEN'
 
 error: RPC failed; curl 56 LibreSSL SSL_read: SSL_ERROR_SYSCALL, errno 60
 https 和 http 的缓存
-//git config --global http.postBuffer 1048576000
-//git config --global https.postBuffer 1048576000
+git config --global http.postBuffer 1048576000
+git config --global https.postBuffer 1048576000
 
 LibreSSL SSL_read: SSL_ERROR_SYSCALL, errno 60
-//git config --global --add remote.origin.proxy ""
+Failed to connect to github.com port 443: Operation timed out
+Error in the HTTP2 framing layer 
+
+git config --global --add remote.origin.proxy ""
+git config --global --unset http.proxy  http://127.0.0.1:7890
+git config --global --unset https.proxy  https://127.0.0.1:7890
 
 LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 
-//git config --global http.sslBackend "openssl"
-if not work above, try below
-//git config --global --add remote.origin.proxy ""
-
-//git config --global --unset http.proxy
-//git config --global --unset https.proxy
+git config --global http.sslBackend "openssl"
+git config --global https.sslBackend "openssl"
 
 
-
-//git config --global --list    
+git config --global --list    
+  
 
 //run-app -Dgrails.server.port.http=9090
 
